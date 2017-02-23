@@ -4,7 +4,7 @@
   become: yes
   remote_user: cloud-user
   tasks:
-  - name: YUM HTTPD
+  - name: YUM HTTPD S
     yum: name=httpd state=latest
-  - name: Service HTTD
+  - name: Service HTTD S
     service: name=httpd state=started
