@@ -6,5 +6,5 @@
   tasks:
   - name: YUM HTTPD
     yum: name=httpd state=latest
-  - name: Service HTT
+  - name: Service HTTD
     service: name=httpd state=started
