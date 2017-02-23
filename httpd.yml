@@ -1,10 +1,10 @@
 ---
 - name: Install HTTPD
-  hosts: 10.100.94.80
+  hosts: 127.0.0.1
   become: yes
   remote_user: cloud-user
   tasks:
   - name: YUM HTTPD
     yum: name=httpd state=latest
-  - name: Service HTTPD
+  - name: Service HTT
     service: name=httpd state=started
